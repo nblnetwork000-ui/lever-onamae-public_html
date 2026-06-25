@@ -1,0 +1,202 @@
+/* ======================
+   初期設定
+====================== */
+html,
+body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+
+/* ======================
+   Header
+====================== */
+.header {
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    background:#ffffff;
+    box-sizing:border-box;
+}
+
+/* ロゴ */
+.logo {
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:5px;
+    color:#17233b;
+    white-space:nowrap;
+}
+
+.logo span {
+    font-size:13px;
+    letter-spacing:0;
+}
+
+/* ナビ */
+.nav {
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+.nav a {
+    text-decoration:none;
+    color:#17233b;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+.nav a:hover {
+    opacity:0.6;
+}
+
+/* ボタン */
+.header-btn a {
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:14px 25px;
+    border-radius:30px;
+    background:#17233b;
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.header-btn span {
+    font-size:18px;
+}
+
+/* ======================
+   ハンバーガー
+====================== */
+.hamburger {
+    display:none;
+}
+
+
+
+/* ======================
+   スマホ対応
+====================== */
+@media screen and (max-width:768px){
+	.header {
+	    height:70px;
+	    padding:0 20px;
+	}
+
+/* PCメニュー非表示 */
+	.nav {
+	    display:none;
+	}
+
+	.header-btn {
+	    display:none;
+	}
+
+	/* ハンバーガー表示 */
+	.hamburger {
+	    display:flex;
+	    flex-direction:column;
+	    gap:6px;
+	}
+
+	.hamburger span {
+	    display:block;
+	    width:25px;
+	    height:2px;
+	    background:#17233b;
+	}
+
+/* ロゴ縮小 */
+	.logo {
+	    font-size:20px;
+	}
+
+	.logo span {
+    font-size:11px;
+	}
+}
+
+/* さらに小さい端末 */
+@media screen and (max-width:380px){
+	.logo {
+	    font-size:18px;
+	}
+	.hamburger span {
+	    width:22px;
+	}
+}
+
+.mobile-menu {
+
+    display:none;
+
+}
+
+
+
+.mobile-menu.active {
+
+
+    display:flex;
+
+
+    position:absolute;
+
+
+    top:70px;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    padding:20px;
+
+
+    flex-direction:column;
+
+
+    gap:12px;
+
+
+    background:white;
+
+
+    box-sizing:border-box;
+
+
+    z-index:999;
+
+
+}
+
+
+
+.mobile-menu a {
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    background:#f5f9fd;
+    border-radius:10px;
+    color:#17233b;
+    text-decoration:none;
+}
+
+/* スマホ以外非表示 */
+
+@media screen and (min-width:769px){
+.mobile-menu {
+display:none!important;
+	}
+}
