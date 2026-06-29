@@ -1,29 +1,24 @@
-const hamburger =
-document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("overlay");
 
-const mobileMenu =
-document.getElementById("mobileMenu");
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", function(){
+        const isOpen = hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("active", isOpen);
+        if (overlay) overlay.classList.toggle("active", isOpen);
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+    });
+}
 
-const overlay =
-document.getElementById("overlay");
-
-hamburger.addEventListener("click", function(){
-
-    hamburger.classList.toggle("active"); 
-    mobileMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
-
-});
-
-
-overlay.addEventListener("click", function(){
-
-    hamburger.classList.toggle("active"); 
-    mobileMenu.classList.remove("active");
-    overlay.classList.remove("active");
-
-});
-
+if (overlay) {
+    overlay.addEventListener("click", function(){
+        hamburger.classList.remove("active");
+        mobileMenu.classList.remove("active");
+        overlay.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+    });
+}
 
 const currentPath = location.pathname.split("/").pop() || "index.html";
 
