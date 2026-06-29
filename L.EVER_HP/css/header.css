@@ -30,13 +30,10 @@ body{
     z-index:10000;
 }
 
-.header-logo{
-    font-size:28px;
-    font-weight:700;
-    letter-spacing:6px;
-    color:#17233b;
-    white-space:nowrap;
-}
+    .header-logo{
+        font-size:28px;
+        letter-spacing:2px;
+    }
 
 .header-logo span{
     font-size:14px;
