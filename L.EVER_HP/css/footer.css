@@ -75,7 +75,7 @@
 
 @media screen and (max-width:768px){
     .footer{
-        min-height:150px;
+        min-height:200px;
         height:auto;
         padding:10px 20px 0px;
     }
@@ -140,14 +140,31 @@
         margin-bottom:14px;
     }
 
-    .contact-item h4{
-        font-size:12px;
-        margin:0 0 4px;
+     .contact-row{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
     }
 
-    .contact-item p{
-        font-size:12px;
-        line-height:1.45;
-        margin:0;
+    .contact-group{
+        display:flex;
+        align-items:flex-start;
+        gap:8px;
+        white-space:normal;
+    }
+
+    .contact-label{
+        width:55px;
+        color:#ffffff;
+        font-size:11px;
+        font-weight:600;
+        flex-shrink:0;
+    }
+
+    .contact-text{
+        flex:1;
+        font-size:10px;
+        line-height:1.4;
     }
 }
