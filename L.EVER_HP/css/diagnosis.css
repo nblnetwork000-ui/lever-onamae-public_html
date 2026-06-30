@@ -1,0 +1,150 @@
+.diagnosis{
+    min-height:calc(100vh - 80px);
+    padding:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    background:
+        radial-gradient(circle at bottom right, rgba(130,200,240,.25), transparent 35%),
+        linear-gradient(135deg, #ffffff 0%, #f6fbff 100%);
+    color:#061b3d;
+}
+
+.diagnosis-text h1{
+    font-size:42px;
+    line-height:1.6;
+    letter-spacing:-0.04em;
+    font-weight:250;
+    margin-bottom:28px;
+}
+
+.diagnosis-text p{
+    font-size:14px;
+    line-height:2;
+    font-weight:350;
+    margin-bottom:36px;
+}
+
+.diagnosis-text h2{
+    margin-top:20px;
+    font-size:20px;
+    margin-bottom:12px;
+    font-weight:350;
+}
+
+.diagnosis-card{
+    width:100%;
+    max-width:420px;
+    padding:42px 44px;
+    border-radius:18px;
+    background:rgba(255,255,255,.75);
+    border:1px solid rgba(6,27,61,.10);
+    box-shadow:0 24px 60px rgba(6,27,61,.06);
+}
+
+.diagnosis-card h2{
+    margin:0 0 34px;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:-0.02em;
+    color:#061b3d;
+}
+
+.diagnosis-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+}
+
+.diagnosis-list li{
+    position:relative;
+    padding-left:44px;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:-0.015em;
+    color:#061b3d;
+}
+
+.diagnosis-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    border:1px solid #c8d7e8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#061b3d;
+    font-size:14px;
+    font-weight:700;
+    background:#fff;
+}
+
+.contact-form{
+    padding:42px;
+    border-radius:18px;
+    background:#fff;
+    box-shadow:0 24px 60px rgba(6,27,61,.10);
+}
+
+.contact-form h2{
+    font-size:22px;
+    margin-bottom:28px;
+}
+
+.contact-form label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.contact-form input{
+    width:100%;
+    height:48px;
+    margin-bottom:20px;
+    padding:0 14px;
+    border:1px solid #dbe5ef;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.contact-form button{
+    width:100%;
+    height:56px;
+    margin-top:20px;
+    border:none;
+    border-radius:999px;
+    background:#061b3d;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+@media screen and (max-width:768px){
+    .diagnosis{
+        padding:100px 20px 60px;
+        display:block;
+    }
+
+    .diagnosis-text h1{
+        font-size:28px;
+    }
+
+    .line{
+        height:auto;
+        margin-bottom:36px;
+    }
+
+    .contact-form{
+        padding:28px 20px;
+    }
+}
