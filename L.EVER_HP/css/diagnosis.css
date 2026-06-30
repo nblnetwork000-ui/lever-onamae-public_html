@@ -1,53 +1,49 @@
 .diagnosis{
     min-height:calc(100vh - 80px);
-    padding:30px;
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:80px;
+    gap:70px;
+    align-items:start;
     background:
-        radial-gradient(circle at bottom right, rgba(130,200,240,.25), transparent 35%),
-        linear-gradient(135deg, #ffffff 0%, #f6fbff 100%);
+        radial-gradient(circle at bottom right, rgba(120,190,235,.22), transparent 34%),
+        linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
     color:#061b3d;
+    max-width: 1380px;
+    padding:0px 0px 0px 40px;
 }
 
 .diagnosis-text h1{
     font-size:42px;
-    line-height:1.6;
-    letter-spacing:-0.04em;
-    font-weight:250;
-    margin-bottom:28px;
+    line-height:1.55;
+    letter-spacing:-0.035em;
+    font-weight:500;
+    margin:0 0 10px;
 }
 
 .diagnosis-text p{
+    max-width:520px;
     font-size:14px;
-    line-height:2;
-    font-weight:350;
-    margin-bottom:36px;
-}
-
-.diagnosis-text h2{
-    margin-top:20px;
-    font-size:20px;
-    margin-bottom:12px;
-    font-weight:350;
+    line-height:1.85;
+    letter-spacing:-0.01em;
+    font-weight:500;
+    margin:0 15px 10px;
 }
 
 .diagnosis-card{
     width:100%;
-    max-width:420px;
-    padding:42px 44px;
-    border-radius:18px;
-    background:rgba(255,255,255,.75);
+    max-width:540px;
+    padding:58px 64px;
+    border-radius:14px;
+    background:rgba(255,255,255,.78);
     border:1px solid rgba(6,27,61,.10);
-    box-shadow:0 24px 60px rgba(6,27,61,.06);
+    box-shadow:0 24px 60px rgba(6,27,61,.055);
 }
 
 .diagnosis-card h2{
-    margin:0 0 34px;
-    font-size:18px;
+    margin:0 0 20px;
+    font-size:36px;
     font-weight:600;
     letter-spacing:-0.02em;
-    color:#061b3d;
 }
 
 .diagnosis-list{
@@ -56,13 +52,13 @@
     margin:0;
     display:flex;
     flex-direction:column;
-    gap:26px;
+    gap:25px;
 }
 
 .diagnosis-list li{
     position:relative;
-    padding-left:44px;
-    font-size:15px;
+    padding-left:46px;
+    font-size:24px;
     font-weight:600;
     letter-spacing:-0.015em;
     color:#061b3d;
@@ -77,74 +73,219 @@
     width:24px;
     height:24px;
     border-radius:50%;
-    border:1px solid #c8d7e8;
+    border:1px solid #c7d7e8;
     display:flex;
     align-items:center;
     justify-content:center;
     color:#061b3d;
-    font-size:14px;
+    font-size:24px;
     font-weight:700;
     background:#fff;
 }
 
 .contact-form{
-    padding:42px;
-    border-radius:18px;
-    background:#fff;
-    box-shadow:0 24px 60px rgba(6,27,61,.10);
+    max-width:720px;
+    padding:10px;
+    border-radius:0;
+    background:rgba(240,250,255,.7);
+    box-shadow:none;
 }
 
-.contact-form h2{
-    font-size:22px;
-    margin-bottom:28px;
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:11px 14px;
 }
 
-.contact-form label{
+.form-field label{
     display:block;
-    margin-bottom:8px;
-    font-size:14px;
-    font-weight:700;
-}
-
-.contact-form input{
-    width:100%;
-    height:48px;
-    margin-bottom:20px;
-    padding:0 14px;
-    border:1px solid #dbe5ef;
-    border-radius:8px;
+    margin-bottom:10px;
     font-size:15px;
+    font-weight:500;
+    color:#061b3d;
 }
 
-.contact-form button{
+.form-field input,
+.form-field select,
+.form-field textarea{
     width:100%;
-    height:56px;
-    margin-top:20px;
-    border:none;
+    border:1px solid #d6e0ea;
+    border-radius:0;
+    background:#fff;
+    color:#061b3d;
+    font-family:inherit;
+    font-size:15px;
+    box-sizing:border-box;
+}
+
+.form-field input,
+.form-field select{
+    height:52px;
+    padding:0 16px;
+}
+
+.form-field textarea{
+    height:150px;
+    padding:16px;
+    resize:vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder{
+    color:#91a0b2;
+}
+
+.form-full{
+    grid-column:1 / -1;
+}
+
+.form-actions{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin-top:8px;
+}
+
+.submit-btn,
+.line-btn{
+    height:52px;
+    padding:0 42px;
     border-radius:999px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+}
+
+.submit-btn{
+    border:none;
     background:#061b3d;
     color:#fff;
-    font-size:16px;
-    font-weight:700;
-    cursor:pointer;
+}
+
+.line-btn{
+    background:#06c755;
+    color:#fff;
+}
+
+.form-note{
+    margin:0;
+    font-size:12px;
+    color:#7d8b9b;
+    line-height:1.6;
 }
 
 @media screen and (max-width:768px){
+    
+    /* 全体 */
     .diagnosis{
-        padding:100px 20px 60px;
-        display:block;
+        display:flex;
+        flex-direction:column;
+        gap:32px;
+
+        padding:24px 18px 0px;
+    }
+
+    /* 左側 */
+    .diagnosis-text{
+        order:1;
     }
 
     .diagnosis-text h1{
-        font-size:28px;
+        font-size:36px;
+        line-height:1.35;
+        letter-spacing:-0.04em;
+        margin-top: 60px;
+        margin-bottom:18px;
     }
 
-    .line{
-        height:auto;
-        margin-bottom:36px;
+    .diagnosis-text p{
+        max-width:none;
+        margin:0 0 24px;
+        font-size:15px;
+        line-height:1.8;
     }
 
+    /* 診断カード */
+    .diagnosis-card{
+        max-width:none;
+        padding:32px 24px;
+        margin-bottom:18px;
+    }
+
+    .diagnosis-card h2{
+        font-size:24px;
+        margin-bottom:24px;
+    }
+
+    .diagnosis-list{
+        gap:22px;
+    }
+
+    .diagnosis-list li{
+        padding-left:42px;
+        font-size:16px;
+        line-height:1.5;
+    }
+
+    .diagnosis-list li::before{
+        width:26px;
+        height:26px;
+        font-size:15px;
+    }
+
+    /* フォーム */
     .contact-form{
-        padding:28px 20px;
+        order:2;
+
+        max-width:none;
+
+        padding:24px 20px;
+
+        border-radius:16px;
+    }
+
+    .form-grid{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .form-field label{
+        margin-bottom:6px;
+        font-size:14px;
+    }
+
+    .form-field input,
+    .form-field select{
+        height:46px;
+        font-size:14px;
+    }
+
+    .form-field textarea{
+        height:130px;
+        font-size:14px;
+    }
+
+    .form-actions{
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        margin-top:10px;
+    }
+
+    .submit-btn,
+    .line-btn{
+        width:100%;
+        height:50px;
+        font-size:15px;
+    }
+
+    .form-note{
+        font-size:11px;
+        text-align:center;
+        line-height:1.6;
     }
 }
