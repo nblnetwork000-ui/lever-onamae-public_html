@@ -9,58 +9,100 @@
 		<link rel="stylesheet" href="./css/footer.css">
 		<title>無料診断のお問い合わせ</title>
 	</head>
+  <body>
 
-<body>
+    <!-- ヘッダー読み込み -->
+    <div id="header"></div>
+    
+    <main>
+  <section class="diagnosis">
+    <!-- 左側 -->
+    <div class="diagnosis-text">
 
-	<!-- ヘッダー読み込み -->
-	<div id="header"></div>
-	
-	<main>
-<section class="diagnosis">
-  <!-- 左側 -->
-  <div class="diagnosis-text">
+      <h1>無料診断をお申し込み下さい。</h1>
 
-    <h1>
-      無料診断をお申し込み下さい。
-    </h1>
-    <p>ご入力内容をもとに、貴社の状況を確認します。無料診断の詳細はメールにてご案内いたします。</p>
+      <p>ご入力内容をもとに、貴社の状況を確認します。無料診断の詳細はメールにてご案内いたします。</p>
 
-  <div class="diagnosis-card">
-    <h2>診断でわかること</h2>
+      <div class="diagnosis-card">
+        <h2>診断でわかること</h2>
 
-    <ul class="diagnosis-list">
-      <li>LTV・CVR・利益率の現状分析</li>
-      <li>利益構造の強み・弱みの可視化</li>
-      <li>AI集客との適合性スコア</li>
-      <li>改善インパクトの試算</li>
-    </ul>
-</div>
+        <ul class="diagnosis-list">
+          <li>LTV・CVR・利益率の現状分析</li>
+          <li>利益構造の強み・弱みの可視化</li>
+          <li>AI集客との適合性スコア</li>
+          <li>改善インパクトの試算</li>
+        </ul>
+      </div>
+      <p>まずはお気軽にお問い合わせください。</p>
+    </div>
 
-    <p>まずはお気軽にお問い合わせください。</p>
-  </div>
+    <!-- 右側フォーム -->
+    <div class="contact-form">
+      <form class="form-grid">
+        <div class="form-field">
+          <label>会社名</label>
+          <input type="text" name="conpanyName" placeholder="例）株式会社L.EVER" required>
+        </div>
 
-  <!-- 右側フォーム -->
-  <div class="contact-form">
-    <h2>お問い合わせ</h2>
-    <form>
-      <label>会社名</label>
-      <input type="text">
-      <label>お名前</label>
-      <input type="text">
-      <label>メールアドレス</label>
-      <input type="email">
-      <label>お問い合わせ内容</label>
-      <button>送信する</button>
-    </form>
-  </div>
-</section>
+        <div class="form-field">
+          <label>担当者名</label>
+          <input type="text" name="PersonInChargeName" placeholder="例）山田 太郎" required>
+        </div>
 
-</main>
+        <div class="form-field">
+          <label>メールアドレス</label>
+          <input type="email" name="email" placeholder="例）info@lever.jp" required>
+        </div>
 
-	<!-- フッター読み込み -->
-	<div id="footer"></div>
+        <div class="form-field">
+          <label>電話番号</label>
+          <input type="tel" name="tel"  pattern="[0-9]{10,11}" placeholder="例）0120399137" required 
+          inputmode="numeric" title="電話番号はハイフンなしの10桁または11桁で入力してください。">
+        </div>
 
-	<script src="./js/main.js"></script>
+        <div class="form-field">
+          <label>大業種</label>
+          <select id="mainIndustry" required>
+            <option value="">選択してください</option>
+            <option value="btob">BtoBサービス・IT</option>
+            <option value="consulting">コンサル・士業・専門サービス</option>
+            <option value="maker">製造・メーカー・卸</option>
+            <option value="realestate">不動産・建設・住宅</option>
+            <option value="medical">医療・美容・福祉</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label>小業種</label>
+          <select id="subIndustry" required>
+            <option>大業種を選択してください</option>
+          </select>
+        </div>
+
+        <div class="form-field form-full">
+          <label>ご質問・ご要望など</label>
+          <textarea placeholder="現在の課題や相談したい内容をご記入ください"></textarea>
+        </div>
+
+        <div class="form-actions form-full">
+          <button type="submit" class="submit-btn">送信する →</button>
+          <a href="#" class="line-btn">公式LINEで問い合わせる</a>
+        </div>
+
+        <p class="form-note form-full">
+          ご入力いただいた個人情報につきましては当社のプライバシーポリシーに基づき適切に管理いたします。
+        </p>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+    <!-- フッター読み込み -->
+    <div id="footer"></div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/diagnosis.js"></script>
 	</body>
-
 </html>
