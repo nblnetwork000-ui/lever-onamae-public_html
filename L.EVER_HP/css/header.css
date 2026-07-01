@@ -19,7 +19,7 @@ body{
 }
 
 .header{
-    width:92%;
+    width:100%;
     height:80px;
     padding:0 0 0 40px;
     background:#ffffff;
@@ -80,6 +80,7 @@ body{
 .nav-target.active::after{width:50px;}
 .achievements.active::after{width:24px;}
 .other-ai-services.active::after{width:92px;}
+.FormX.active::after{width:40px;}
 .company-profile.active::after{width:52px;}
 .privacy.active::after{width:120px;}
 
