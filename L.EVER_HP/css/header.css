@@ -19,15 +19,16 @@ body{
 }
 
 .header{
-    width:100%;
+    width:92%;
     height:80px;
-    padding:0 40px;
+    padding:0 0 0 40px;
     background:#ffffff;
     display:flex;
     align-items:center;
     justify-content:space-between;
     position:relative;
     z-index:10000;
+    max-width:1620px;
 }
 
     .header-logo{

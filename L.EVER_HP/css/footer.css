@@ -2,6 +2,8 @@
    Footer
 =========================== */
 .footer{
+    width:92%;
+    max-width:1620px;
     position:relative;
     overflow:hidden;
     background:#061b3d;
@@ -75,7 +77,7 @@
 
 @media screen and (max-width:768px){
     .footer{
-        min-height:200px;
+        min-height:180px;
         height:auto;
         padding:10px 16px 0;
     }
@@ -121,7 +123,7 @@
     .footer-contact{
         width:100%;
         display:block;
-        margin-top:22px;
+        margin-top:12px;
         padding-left:0;
         border-left:none;
         flex-direction:row;
@@ -133,12 +135,10 @@
 
     .footer-title{
         font-size:12px;
-        margin:0 0 10px;
     }
 
     .contact-item{
         display:block;
-        margin-bottom:14px;
     }
 
      .contact-row{
