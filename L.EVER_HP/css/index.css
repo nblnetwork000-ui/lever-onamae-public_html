@@ -125,43 +125,63 @@ main{
 /* スマホ */
 @media screen and (max-width:768px){
         .top-hero{
-        min-height:auto;
-        padding:32px 0 48px;
-    }
-
-    .hero-inner{
-        width:100%;
-        padding:0 20px;
-        box-sizing:border-box;
         display:flex;
         flex-direction:column;
-        gap:32px;
+        padding:24px 0 10px;
+    }
+
+       .hero-inner{
+        position:relative;
+        z-index:2;
+        display:block;
+        padding:0 16px;
+        box-sizing:border-box;
+    }
+
+    .hero-content{
+        position:relative;
+        z-index:3;
     }
 
     .hero-content h1{
         font-size:34px;
         line-height:1.45;
+        margin-bottom:22px;
     }
 
     .hero-content p{
         font-size:12px;
         line-height:1.8;
+        margin-bottom:24px;
     }
 
     .hero-buttons{
         flex-direction:column;
+        gap:12px;
     }
 
     .hero-btn{
         width:fit-content;
     }
 
-    .hero-visual img{
-        width:100%;
-        max-width:420px;
-    }
-
     .hero-tags{
         flex-wrap:wrap;
+    }
+
+    .hero-visual{
+        position:absolute;
+        right:-230px;
+        bottom:-10px;
+        width:420px;
+        z-index:1;
+        pointer-events:none;
+        opacity:.95;
+    }
+
+    .hero-visual img{
+        width:100%;
+        max-width:none;
+        transform:none;
+        display:block;
     }
 }
