@@ -6,15 +6,19 @@
     <a href="../sarvice-pages.html" class="nav-service">サービス概要</a>
     <a href="../dounyutaisyou.html" class="nav-target">導入対象</a>
     <a href="../jisseki.html" class="achievements">実績</a>
-    <a href="../formX.html" class="FormX">FormX</a>
-    <a href="../other-service.html" class="other-ai-services">その他AIサービス</a>
+    <div class="nav-dropdown-wrap">
+      <a href="../other-service.html" class="other-ai-services">その他AIサービス</a>
+      <button class="pc-menu-toggle" id="pcMenuToggle" type="button">▼</button>
+    </div>
+    <nav class="pc-dropdown" id="pcDropdown">
+      <a href="../formX.html">FormX</a>
+      <a href="#">AI記事生成</a>
+      <a href="#">AI営業支援</a>
+      <a href="#">AI戦略設計</a>
+    </nav>
     <a href="../conpany-info.html" class="company-profile">会社概要</a>
     <a href="../privacy.html" class="privacy">プライバシーポリシー</a>
   </nav>
-
-  <div class="header-btn">
-    <a href="../diagnosis.html">無料診断を申し込む <span>→</span></a>
-  </div>
 
   <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
     <span></span>
@@ -26,12 +30,26 @@
 
   <nav class="mobile-menu" id="mobileMenu" aria-label="スマホメニュー">
     <a href="../index.html">TOP<span>→</span></a>
-    <a href="../diagnosis.html">無料診断<span>→</span></a>
     <a href="../sarvice-pages.html">サービス概要<span>→</span></a>
     <a href="../dounyutaisyou.html">導入対象<span>→</span></a>
     <a href="../jisseki.html">実績<span>→</span></a>
-    <a href="../formX.html" class="FormX">FormX<span>→</span></a>
-    <a href="../other-service.html">その他AIサービス<span>→</span></a>
+    <div class="mobile-menu-item has-accordion">
+      <a href="../other-service.html">
+        その他AIサービス
+      </a>
+
+      <button class="mobile-accordion-btn" type="button">
+        ▼
+      </button>
+
+      <span>→</span>
+    </div>
+
+    <div class="mobile-sub-menu">
+      <a href="../formx.html">FormX<span>→</span></a>
+      <a href="../ai-article.html">AI記事生成<span>→</span></a>
+      <a href="../business-ai.html">業務改善AI<span>→</span></a>
+    </div>
     <a href="../conpany-info.html">会社概要<span>→</span></a>
     <a href="../privacy.html" class="privacy">プライバシーポリシー<span>→</span></a>
   </nav>
