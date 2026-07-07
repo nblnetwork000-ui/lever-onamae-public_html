@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./index_styles.css">
+		<link rel="stylesheet" href="./css/formX.css">
 		<link rel="stylesheet" href="./css/header.css">
 		<link rel="stylesheet" href="./css/footer.css">
 		<title>FormX</title>
@@ -13,12 +13,14 @@
 <body>
 	<!-- ヘッダー読み込み -->
 	<div id="header"></div>
-
-	<main>
-		<img src="img/formX-pc.jpg" >
-			
-	</main>
-
+		<main>
+			<div class="page-image-wrap">
+				<picture class="page-image">
+					<source media="(max-width:1036px)" srcset="./img/FormX_SP.png">
+					<img src="./img/FormX_PC.png"alt="AI記事生成">
+				</picture>
+			</div>
+		</main>
 	<!-- フッター読み込み -->
 		<div id="footer"></div>
 		<script src="./js/main.js"></script>
