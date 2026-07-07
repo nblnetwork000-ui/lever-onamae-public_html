@@ -1,0 +1,41 @@
+.page-image-wrap{
+
+    width:100%;
+    max-width:1620px;
+}
+
+.page-image{
+
+    display:block;
+    width:100%;
+    margin:0;
+    line-height:0;
+}
+
+.page-image img{
+    border:none;
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+@media screen and (max-width:1032px){
+    .page-image-wrap{
+        margin-top: 60px;
+        width:100%;
+    }
+
+    .page-image{
+        margin:0;
+        line-height:0;
+        display:block;
+        width:100%;
+    }
+
+    .page-image img{
+        border:none;
+        display:block;
+        width:100%;
+        height:auto;
+    }
+}
