@@ -1,0 +1,44 @@
+.page-image-wrap{
+
+    width:100%;
+    max-width:1620px;
+}
+
+.page-image{
+
+    display:block;
+    width:100%;
+}
+
+.page-image img{
+
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+@media screen and (max-width:1032px){
+    .page-image-wrap{
+        width:100%;
+    }
+    /* スマホ最初の画像だけヘッダーに隠れるので対策　*/
+    .sp-fast{
+        margin-top: 100px  !important;
+    }
+
+    .page-image{
+        display:block;
+        width:100%;
+    }
+
+    .page-image img{
+
+        display:block;
+        width:100%;
+        height:auto;
+    }
+     /* スマホは画像は2枚のみ表示　*/
+    .pc-only{
+        display:none !important;
+    }
+}

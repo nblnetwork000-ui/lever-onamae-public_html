@@ -1,38 +1,171 @@
-.page-image-wrap{
-
+.other-service{
     width:100%;
     max-width:1620px;
+    color:#061b3d;
+    background:#fff;
+    font-family:"Noto Serif JP", serif;
 }
 
-.page-image{
-
+.other-hero-img{
     display:block;
     width:100%;
-}
-
-.page-image img{
-
-    display:block;
-    width:100%;
+    width:1600px;
     height:auto;
 }
 
-@media screen and (max-width:1032px){
-    .page-image-wrap{
-        margin-top: 40px;
-        width:100%;
+.service-list{
+    padding:20px 72px 40px;
+}
+
+.service-list h2{
+    position:relative;
+    text-align:center;
+    font-size:30px;
+    font-weight:500;
+    margin:0 0 20px;
+}
+
+.service-list h2::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-16px;
+    transform:translateX(-50%);
+    width:56px;
+    height:4px;
+    border-radius:999px;
+    background:#6FD2F2;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.service-card{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:36px;
+    align-items:start;
+    padding:42px 48px;
+    border:1px solid rgba(6,27,61,.12);
+    border-radius:10px;
+    background:rgba(255,255,255,.82);
+}
+
+.service-icon{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:0px;
+    gap:34px
+}
+
+.service-icon img{
+    width:150%;
+    height:100%;
+    justify-self:center;
+}
+
+.service-icon a{
+    margin:0 0 0 25px;
+    white-space:nowrap;
+}
+
+.service-card h3{
+    font-size:32px;
+    font-weight:500;
+    margin:0 0 8px;
+}
+
+.service-sub{
+    color:#006cff;
+    font-weight:600;
+    margin:0 0 14px;
+}
+
+.service-card p{
+    font-size:16px;
+    line-height:1.8;
+    margin:0 0 22px;
+}
+
+.service-card a{
+    color:#061b3d;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+}
+
+.service-card a span{
+    margin-left:20px;
+}
+
+@media screen and (max-width:1036px){
+    .other-service{
+        padding-top:72px;
     }
 
-    .page-image{
-
-        display:block;
-        width:100%;
+    .other-hero{
+        padding:100px 24px 24px;
     }
 
-    .page-image img{
-
-        display:block;
+    .other-hero-img{
         width:100%;
-        height:auto;
+        max-width:none;
+    }
+
+    .service-list{
+        padding:20px 20px 60px;
+    }
+
+    .service-list h2{
+        display:none;
+    }
+
+    .service-grid{
+        display:flex;
+        flex-direction:column;
+        gap:26px;
+    }
+
+    .service-card{
+        display:grid;
+        grid-template-columns:120px 1fr;
+        gap:22px;
+        padding:34px 28px;
+        border:none;
+        border-radius:18px;
+        box-shadow:0 18px 50px rgba(6,27,61,.06);
+    }
+
+    .service-card img{
+        width:86px;
+    }
+
+    .service-card h3{
+        font-size:30px;
+    }
+
+    .service-card p{
+        font-size:15px;
+    }
+
+    .service-card a{
+        grid-column:1 / -1;
+        width:100%;
+        height:54px;
+        border:1px solid #006cff;
+        border-radius:999px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .service-card a span{
+        margin-left:auto;
+        padding-right:22px;
     }
 }
