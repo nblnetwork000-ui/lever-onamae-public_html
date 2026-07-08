@@ -1,50 +1,206 @@
 <!doctype html>
 <html lang="ja">
-
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./css/index.css">
-		<link rel="stylesheet" href="./css/header.css">
-		<link rel="stylesheet" href="./css/footer.css">
-		<title>株式会社L.EVER</title>
-	</head>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>株式会社L.EVER</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
 <body>
 	<!-- ヘッダー読み込み -->
 	<div id="header"></div>
-		<main>
-			<section class="top-hero">
-				<div class="hero-inner">
-					<div class="hero-content">
-						<h1>広告費の前に、<br>利益が残る集客構造を</h1>
 
-						<p>
-							L.EVERは、法人向けにLTV・CVR・利益率をもとにした集客設計を行い、<br>
-							資産の事業をAIとデータで成長させる会社です。
-						</p>
+  <main>
+    <section class="top-hero" aria-labelledby="hero-title">
+      <div class="top-hero__inner container">
+        <div class="top-hero__content">
+          <h1 id="hero-title" class="top-hero__title">広告費の前に、<br>利益が残る集客構造を</h1>
 
-						<div class="hero-buttons">
-							<a href="./diagnosis.html" class="hero-btn primary">無料診断を申し込む <span>→</span></a>
-							<a href="./sarvice-pages.html" class="hero-btn secondary">サービス内容を見る <span>→</span></a>
-						</div>
+          <p class="top-hero__text">
+            L.EVERは、法人向けにLTV・CVR・利益率をもとにした集客設計を行い、<br>
+            貴社の事業をAIとデータで成長させる会社です。
+          </p>
 
-						<div class="hero-tags">
-							<span>法人向け</span>
-							<span>利益改善</span>
-							<span>営業支援</span>
-						</div>
+          <div class="top-hero__buttons">
+            <a href="./diagnosis.html" class="button button--primary">無料診断を申し込む <span>→</span></a>
+            <a href="./sarvice-pages.html" class="button button--secondary">サービス内容を見る <span>→</span></a>
+          </div>
+
+          <ul class="top-hero__tags" aria-label="サービスの特徴">
+            <li>法人向け</li>
+            <li>利益改善</li>
+            <li>営業支援</li>
+          </ul>
+        </div>
+
+        <div class="top-hero__visual" aria-hidden="true">
+          <img src="./img/object-top.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy-section" aria-labelledby="philosophy-title">
+      <div class="philosophy-section__inner container container--wide">
+        <div class="philosophy-photo-card">
+          <div class="philosophy-photo-card__text">
+            <p class="section-kicker">経営理念</p>
+            <p class="section-en">PHILOSOPHY</p>
+            <h2 id="philosophy-title">誠実に、価値を創造し、<br>関わるすべての人と共に<br>より良い未来をつくる。</h2>
+          </div>
+          <div class="philosophy-photo-card__image">
+            <img src="./img/philosophy-main.jpg" alt="都市を見渡すビジネスチーム">
+          </div>
+        </div>
+
+        <div class="philosophy-message-card">
+          <h2>AIを、もっと身近に。<br>ビジネスを、もっと前へ。</h2>
+          <p>
+            AIは、使いこなせてはじめて企業の力になります。L.EVERは、お客様の課題に寄り添い、
+            目的に合わせたAI活用を設計・実装します。<br>
+            業務効率化、発信力向上、売上拡大につながる仕組みづくりを通じて、
+            人の可能性を広げる未来を支えます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-lead-section" aria-labelledby="ai-lead-title">
+      <div class="ai-lead-section__inner container">
+        <h2 id="ai-lead-title">AIで、ビジネスの<br>可能性を拡張する。</h2>
+        <p>
+          業務だけでなく、意思決定を支え、<br>
+          AIと協働したすべてを、包括的に支援します。
+        </p>
+      </div>
+    </section>
+
+			<section class="service-list">
+				<h2>L.EVERのAI関連サービス</h2>
+
+				<div class="service-grid">
+
+					<article class="service-card">
+					<div class="service-icon">
+						<img src="./img/icon_1.jpg" alt="">
+						<a href="./formX.html">サービスを見る <span>→</span></a>
 					</div>
-
-					<div class="hero-visual">
-						<img src="./img/object-top.png" alt="">
+					
+					<div class="service-content">
+						<h3>FormX</h3>
+						<p class="service-sub">AI問い合わせフォーム最適化</p>
+						<p>問い合わせの自動応答や内容の分類を行い、アポイント獲得率と顧客対応の質を向上させます。</p>
 					</div>
+					</article>
+
+					<article class="service-card">
+					<div class="service-icon">
+						<img src="./img/icon_2.jpg" alt="">
+						<a href="./ai-article-generation.html">サービスを見る <span>→</span></a>
+					</div>
+					<div>
+						<h3>AI記事生成SaaS</h3>
+						<p class="service-sub">高品質な記事を自動生成・最適化</p>
+						<p>SEOに強い記事をAIで生成。コンテンツマーケの効率を最大化します。</p>
+					</div>
+					</article>
+
+					<article class="service-card">
+					<div class="service-icon">
+						<img src="./img/icon_3.jpg" alt="">
+						<a href="./ai-sales-support.html">サービスを見る <span>→</span></a>
+					</div>
+					<div>
+						<h3>AI営業支援</h3>
+						<p class="service-sub">営業活動の自動化・最適化</p>
+						<p>見込み顧客の分析からアプローチ・提案までをAIで支援します。</p>
+					</div>
+					</article>
+
+					<article class="service-card">
+					<div class="service-icon">
+						<img src="./img/icon_4.jpg" alt="">
+						<a href="./ai-strategy.html">サービスを見る <span>→</span></a>
+					</div>
+					<div>
+						<h3>AI戦略設計</h3>
+						<p class="service-sub">AI導入戦略の立案・実行支援</p>
+						<p>現状分析から導入計画・実行まで伴走し、成果につながるAI活用を実現します。</p>
+					</div>
+					</article>
+
 				</div>
 			</section>
-		</main>
-	<!-- フッター読み込み -->
-	<div id="footer"></div>
-	<script src="./js/main.js"></script>
-</body>
+    <section class="recruit-section" aria-labelledby="recruit-title">
+      <div class="recruit-section__inner container">
+        <div class="recruit-photo-card">
+          <img src="./img/recruit-photo.jpg" alt="ミーティングをする社員">
+          <div class="recruit-photo-card__text">
+            <p class="section-kicker">採用情報</p>
+            <p class="section-en">RECRUIT</p>
+            <h2 id="recruit-title">一緒に働く人を、<br>ちゃんと大切にしたい。</h2>
+            <p>あなたらしく成長しながら、<br>誰かのビジネスを前へ動かす仕事を、<br>私たちと一緒に。</p>
+          </div>
+        </div>
 
+        <div class="recruit-message-card">
+          <div>
+            <h2>人の可能性を広げる仕事を、<br>一緒に。</h2>
+            <p>
+              AIとデータを、誰かの成果につながる仕組みに変えていく。
+              誠実に向き合い、挑戦を楽しめる仲間を募集しています。
+            </p>
+          </div>
+          <a href="#recruit-detail" class="button button--primary button--small">採用情報を見る <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-style-section" aria-labelledby="work-style-title">
+      <div class="container">
+        <div class="work-style-section__heading">
+          <div>
+            <h2 id="work-style-title">L.EVERで働く魅力</h2>
+            <p class="section-en">WORK STYLE</p>
+          </div>
+          <p>事業成長と人の可能性、どちらにもまっすぐ向き合える環境をつくります。</p>
+        </div>
+
+        <div class="work-card-grid">
+          <article class="work-card">
+            <span class="work-card__num">01</span>
+            <div>
+              <h3>挑戦できる環境</h3>
+              <p>営業・制作・分析まで横断し、実務の中で<br>AI活用を磨けます。</p>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <span class="work-card__num">02</span>
+            <div>
+              <h3>チームで成果をつくる</h3>
+              <p>一人で抱え込まず、互いの得意を活かして<br>前に進む文化です。</p>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <span class="work-card__num">03</span>
+            <div>
+              <h3>柔軟に学び続ける</h3>
+              <p>変化の速いAI領域でも、学習と改善を重ね<br>ながら成長できます。</p>
+            </div>
+          </article>
+        </div>
+
+        <div id="recruit-detail" class="recruit-flow">
+          <strong>募集職種・働く環境・選考フローを掲載予定</strong>
+          <span>AI活用支援／営業支援／コンテンツ制作など、得意を活かせる領域から参加できます。</span>
+          <a href="#" class="button button--primary button--small">募集要項を見る <span>→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <div id="footer"></div>
+		<script src="./js/main.js"></script>
+</body>
 </html>
