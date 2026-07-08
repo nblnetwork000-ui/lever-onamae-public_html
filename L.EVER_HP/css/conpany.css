@@ -1,0 +1,87 @@
+/* =========================================================
+   conpany.css
+   会社概要ページ：PC/SP画像切り替え + SP電話発信リンク
+   ========================================================= */
+
+:root {
+	/* 固定ヘッダーが重なるため、ファーストビューを少し下げる */
+	--conpany-header-offset: 40px;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	background: #fff;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.conpany-main {
+	width: 100%;
+	margin: 0;
+	/* ヘッダー分の余白。固定ヘッダーに画像が被らないように40px下げる */
+	padding: var(--conpany-header-offset) 0 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+.conpany-visual {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	background: #fff;
+}
+
+.conpany-visual picture {
+	display: block;
+	width: 100%;
+}
+
+.conpany-visual__image {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* PCでは電話リンクを非表示 */
+.conpany-visual__tel {
+	display: none;
+}
+
+/* SP版のみ、画像内の電話番号エリアをタップ可能にする */
+@media screen and (max-width: 767px) {
+	.conpany-visual__tel {
+		display: block;
+		position: absolute;
+		z-index: 2;
+
+		/* 現在のSP画像の電話番号エリアに合わせた位置 */
+		left: 17%;
+		bottom: 2.8%;
+		width: 66%;
+		height: 5.2%;
+
+		border-radius: 999px;
+		background: rgba(0, 102, 255, 0);
+		text-indent: -9999px;
+		overflow: hidden;
+		white-space: nowrap;
+		-webkit-tap-highlight-color: rgba(0, 102, 255, 0.16);
+	}
+
+	.conpany-visual__tel:focus-visible {
+		outline: 2px solid #0a5bff;
+		outline-offset: 4px;
+	}
+}
