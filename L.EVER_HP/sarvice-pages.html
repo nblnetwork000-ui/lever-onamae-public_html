@@ -14,31 +14,43 @@
 	<!-- ヘッダー読み込み -->
 	<div id="header"></div>
 	<main>
-			<picture class="page-image sp-fast">
+						<!-- 1枚目 -->
+			<picture class="page-image sp-first">
 				<source
-					media="(max-width:1036px)"
-					srcset="./img/dounyutaisyou_SP_1.png">
+				media="(max-width:1036px)"
+				srcset="./img/dounyutaisyou_SP_1.png">
 
 				<img
-					src="./img/dounyutaisyou_PC_2.png"
-					alt="ページ1">
+				src="./img/dounyutaisyou_PC_2.png"
+				alt="AI 業務自動化 支援">
 			</picture>
 
-			<picture class="page-image">
+			<!-- 2枚目＋資料請求ボタン -->
+			<div class="page-image-cta-wrap">
+				<picture class="page-image">
 				<source
 					media="(max-width:1036px)"
 					srcset="./img/dounyutaisyou_SP_2.png">
 
 				<img
 					src="./img/dounyutaisyou_PC_1.png"
-					alt="ページ2">
-			</picture>
+					alt="生成AI コンサルティング">
+				</picture>
 
-			<picture class="page-image pc-only">
-				<img
-					src="./img/dounyutaisyou_PC_3.png"
-					alt="ページ3">
-			</picture>
+				<a
+				href="./request-for-information.html"
+				class="sales-document-button">
+				<span class="sales-document-button__icon">✉</span>
+				無料資料請求
+				</a>
+			</div>
+
+		<!-- PCだけ3枚目 -->
+		<picture class="page-image pc-only">
+			<img
+			src="./img/dounyutaisyou_PC_3.png"
+			alt="単純作業 自動化">
+		</picture>
 	</main>
 
 	<!-- フッター読み込み -->
