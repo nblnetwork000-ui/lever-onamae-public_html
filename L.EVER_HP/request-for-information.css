@@ -1,0 +1,393 @@
+/* ==============================
+   資料請求ページ
+============================== */
+
+.diagnosis {
+    min-height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 40px 0 40px 40px;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at bottom right,
+            rgba(120, 190, 235, 0.22),
+            transparent 34%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f7fbff 100%
+        );
+
+    color: #061b3d;
+    font-family: inherit;
+}
+
+/* ==============================
+   左側テキスト
+============================== */
+
+.diagnosis-text h1 {
+    margin: 0 0 28px;
+    font-size: 42px;
+    line-height: 1.55;
+    letter-spacing: -0.035em;
+    font-weight: 500;
+    color: #061b3d;
+}
+
+.diagnosis-text p {
+    max-width: 520px;
+    margin: 0 15px 10px;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    color: #061b3d;
+}
+
+/* ==============================
+   診断カード
+============================== */
+
+.diagnosis-card {
+    width: 100%;
+    max-width: 540px;
+    padding: 58px 64px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(6, 27, 61, 0.1);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 24px 60px rgba(6, 27, 61, 0.055);
+}
+
+.diagnosis-card h2 {
+    margin: 0 0 20px;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+}
+
+.diagnosis-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.diagnosis-list li {
+    position: relative;
+    padding-left: 46px;
+
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    color: #061b3d;
+}
+
+.diagnosis-list li::before {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #c7d7e8;
+    border-radius: 50%;
+    background: #ffffff;
+
+    color: #061b3d;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* ==============================
+   フォーム
+============================== */
+
+.contact-form {
+    width: 100%;
+    max-width: 720px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    border-radius: 0;
+    background: rgba(240, 250, 255, 0.7);
+    box-shadow: none;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px 14px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 10px;
+
+    color: #061b3d;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid #d6e0ea;
+    border-radius: 0;
+    background: #ffffff;
+
+    color: #061b3d;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.form-field input,
+.form-field select {
+    height: 52px;
+    padding: 0 16px;
+}
+
+.form-field textarea {
+    height: 150px;
+    padding: 16px;
+    resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #91a0b2;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form-full {
+    grid-column: 1 / -1;
+}
+
+/* ==============================
+   送信ボタン
+============================== */
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.submit-btn,
+.line-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    min-width: 220px;
+    height: 52px;
+    padding: 0 38px;
+    box-sizing: border-box;
+
+    border-radius: 999px;
+    text-decoration: none;
+
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn {
+    border: none;
+    background: #061b3d;
+    color: #ffffff;
+}
+
+.line-btn {
+    background: #06c755;
+    color: #ffffff;
+}
+
+.form-note {
+    margin: 0;
+
+    color: #7d8b9b;
+    font-size: 12px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* ==============================
+   スマートフォン
+============================== */
+
+@media screen and (max-width: 768px) {
+    .diagnosis {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 24px 18px 0;
+    }
+
+    /* 左側テキスト */
+
+    .diagnosis-text {
+        order: 1;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .diagnosis-text h1 {
+        margin: 0 0 28px;
+        font-size: 48px;
+        line-height: 1.35;
+        letter-spacing: -0.04em;
+        font-weight: 500;
+    }
+
+    .diagnosis-text p {
+        max-width: 560px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: -0.01em;
+        font-weight: 500;
+    }
+
+    /*
+    HTML内の説明文をスマホでも表示するため、
+    以前あった以下の指定は削除しています。
+
+    .diagnosis-text > p:last-child {
+        display: none;
+    }
+    */
+
+    /* 診断カード */
+
+    .diagnosis-card {
+        max-width: none;
+        margin-bottom: 18px;
+        padding: 32px 24px;
+    }
+
+    .diagnosis-card h2 {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+    .diagnosis-list {
+        gap: 22px;
+    }
+
+    .diagnosis-list li {
+        padding-left: 42px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .diagnosis-list li::before {
+        width: 26px;
+        height: 26px;
+        font-size: 15px;
+    }
+
+    /* フォーム */
+
+    .contact-form {
+        order: 2;
+        width: 100%;
+        max-width: none;
+        padding: 24px 20px;
+
+        border-radius: 16px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-full {
+        grid-column: auto;
+    }
+
+    .form-field label {
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+
+    .form-field input,
+    .form-field select {
+        height: 46px;
+        font-size: 14px;
+    }
+
+    .form-field textarea {
+        height: 130px;
+        font-size: 14px;
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+        font-size: 14px;
+    }
+
+    /* ボタン */
+
+    .form-actions {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .submit-btn,
+    .line-btn {
+        width: 100%;
+        min-width: 0;
+        height: 50px;
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .form-note {
+        font-size: 11px;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
