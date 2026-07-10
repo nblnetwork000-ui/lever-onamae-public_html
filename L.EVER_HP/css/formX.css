@@ -1,5 +1,5 @@
 .page-image-wrap{
-
+    position:relative;
     width:100%;
     max-width:1620px;
 }
@@ -15,6 +15,43 @@
     display:block;
     width:100%;
     height:auto;
+}
+/* PC版：右下の資料請求カード内に配置 */
+.sales-document-button{
+	position:absolute;
+	right:6.5%;
+	bottom:2%;
+	width:18%;
+	min-width:220px;
+	height:54px;
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:12px;
+
+	border-radius:8px;
+	background:#062a83;
+	color:#fff;
+	text-decoration:none;
+
+	font-size:16px;
+	font-weight:600;
+	line-height:1;
+
+	box-shadow:0 10px 24px rgba(6,42,131,.18);
+	transition:transform .2s ease, opacity .2s ease;
+	z-index:2;
+}
+
+.sales-document-button:hover{
+	transform:translateY(-2px);
+	opacity:.92;
+}
+
+.sales-document-button__icon{
+	font-size:17px;
+	line-height:1;
 }
 
 @media screen and (max-width:1032px){
@@ -35,4 +72,15 @@
         width:100%;
         height:auto;
     }
+    .sales-document-button{
+		right:25%;
+		bottom:1%;
+
+		width:50%;
+		min-width:0;
+		height:30px;
+
+		font-size:15px;
+		border-radius:7px;
+	}
 }

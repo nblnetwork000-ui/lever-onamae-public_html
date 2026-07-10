@@ -1,50 +1,25 @@
 .diagnosis{
-    min-height:calc(100vh - 80px);
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
+    gap:60px;
     align-items:start;
-    background:
-        radial-gradient(circle at bottom right, rgba(120,190,235,.22), transparent 34%),
-        linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
-    color:#061b3d;
     width:100%;
     max-width:1620px;
-    padding:0px 0px 0px 40px;
+    margin:0 10px;
+    padding:40px;
 }
 
 .diagnosis-text h1{
-    font-size:42px;
-    line-height:1.55;
-    letter-spacing:-0.035em;
+    font-size:48px;
+    line-height:1.35;
     font-weight:500;
-    margin:0 0 10px;
+    margin:0 0 28px;
 }
 
 .diagnosis-text p{
-    max-width:520px;
-    font-size:14px;
-    line-height:1.85;
-    letter-spacing:-0.01em;
-    font-weight:500;
-    margin:0 15px 10px;
-}
-
-.diagnosis-card{
-    width:100%;
-    max-width:540px;
-    padding:36px 64px;
-    border-radius:14px;
-    background:rgba(255,255,255,.78);
-    border:1px solid rgba(6,27,61,.10);
-    box-shadow:0 24px 60px rgba(6,27,61,.055);
-}
-
-.diagnosis-card h2{
-    margin:0 0 20px;
-    font-size:36px;
-    font-weight:600;
-    letter-spacing:-0.02em;
+    max-width:560px;
+    font-size:16px;
+    line-height:1.9;
+    margin:0;
 }
 
 .diagnosis-list{
@@ -85,11 +60,10 @@
 }
 
 .contact-form{
-    max-width:720px;
-    padding:10px;
+    background:#eef8fd;
+    padding:34px;
     border-radius:0;
-    background:rgba(240,250,255,.7);
-    box-shadow:none;
+    max-width:none;
 }
 
 .form-grid{
@@ -140,17 +114,12 @@
     grid-column:1 / -1;
 }
 
-.form-actions{
-    display:flex;
-    gap:10px;
-    align-items:center;
-    margin-top:8px;
-}
-
 .submit-btn,
 .line-btn{
+    width:auto;
+    min-width:220px;
     height:52px;
-    padding:0 42px;
+    padding:0 38px;
     border-radius:999px;
     display:flex;
     align-items:center;
@@ -158,6 +127,13 @@
     text-decoration:none;
     font-size:15px;
     font-weight:600;
+}
+
+.form-actions{
+    display:flex;
+    gap:16px;
+    align-items:center;
+    margin-top:8px;
 }
 
 .submit-btn{
@@ -191,6 +167,7 @@
     /* 左側 */
     .diagnosis-text{
         order:1;
+        margin-top: 60px;
     }
 
     .diagnosis-text > p:last-child{
@@ -198,18 +175,17 @@
     }
 
     .diagnosis-text h1{
-        font-size:36px;
+        font-size:48px;
         line-height:1.35;
-        letter-spacing:-0.04em;
-        margin-top: 60px;
-        margin-bottom:18px;
+        font-weight:500;
+        margin:0 0 28px;
     }
 
     .diagnosis-text p{
-        max-width:none;
-        margin:0 0 24px;
-        font-size:15px;
-        line-height:1.8;
+        max-width:560px;
+        font-size:16px;
+        line-height:1.9;
+        margin:0;
     }
 
     /* 診断カード */

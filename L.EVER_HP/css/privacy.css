@@ -1,4 +1,5 @@
 body{
+    font-family:"Noto Serif JP", serif !important;
     margin:0;
     color:#061b3d;
     font-family:sans-serif;
@@ -143,9 +144,11 @@ body{
 @media screen and (max-width:768px){
 
     .privacy-hero{
+        width:100%;
+        max-width:100%;
         height:auto;
-        min-height:240px;
-        padding:96px 0 44px 40px;
+        min-height:220px;
+        padding:96px 16px 40px;
         background:
             linear-gradient(
                 90deg,
@@ -154,10 +157,12 @@ body{
                 rgba(255,255,255,.45) 100%
             ),
             url("../img/privacy.png");
+
         background-size:cover;
         background-position:center right;
         display:flex;
         align-items:flex-start;
+        box-sizing:border-box;
     }
 
     .privacy-hero-inner{
@@ -183,11 +188,29 @@ body{
     .privacy-hero p{
         font-size:12px;
         line-height:1.8;
-        max-width:280px;
+        max-width:300px;
+        padding-left:0;
     }
 
-    .privacy-section th{
-        width:150px;
-        background:#f7fbff;
+    .privacy-body{
+        width:100%;
+        padding:24px 16px 20px;
+        box-sizing:border-box;
+    }
+
+    .privacy-inner{
+        width:100%;
+        max-width:none;
+        margin:0;
+    }
+
+    .privacy-section table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    .privacy-section th,
+    .privacy-section td{
+        font-size:12px;
     }
 }

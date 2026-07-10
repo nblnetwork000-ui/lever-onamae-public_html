@@ -9,7 +9,6 @@
 
 body{
     overflow-x:hidden;
-    font-family:sans-serif;
 }
 
 #header{
@@ -33,6 +32,7 @@ body{
 }
 
 .header-logo{
+    font-family:"Noto Serif JP", serif !important;
     font-size:28px;
     letter-spacing:2px;
 }
@@ -49,6 +49,7 @@ body{
 }
 
 .nav a{
+    font-family:"Noto Serif JP", serif !important;
     position:relative;
     color:#17233b;
     text-decoration:none;
@@ -130,7 +131,7 @@ body{
 .pc-dropdown{
     position:absolute;
     top:64px;
-    left:43%;
+    left:37%;
     transform:translateX(-50%);
     width:120px;
     padding:14px 10px;

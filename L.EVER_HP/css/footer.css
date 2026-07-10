@@ -30,6 +30,7 @@
 }
 
 .footer-info{
+    font-family:"Noto Serif JP", serif !important;
     display:flex;
     justify-content:flex-start;
     align-items:flex-start;
@@ -115,7 +116,7 @@
     }
 
     .footer-message{
-        max-width:260px;
+        max-width:280px;
         font-size:12px;
         line-height:1.6;
     }
